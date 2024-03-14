@@ -1,16 +1,49 @@
 ---
-
+import "../styles/style.css";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@700&family=Lexend:wght@100..900&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <h1 class="rulle">Karrusel Festival &nbsp; Karrusel Festival &nbsp; Karrusel Festival &nbsp; Karrusel Festival &nbsp;</h1>
+    </main>
+    <footer></footer>
+  </body>
 </html>
+
+<style>
+  body {
+    background-image: url(../public/index_baggrund.svg);
+    background-size: cover;
+  }
+
+  @keyframes rulle_kf {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+  .rulle {
+    overflow: hidden; /* Sikrer at teksten uden for beholderen ikke vises */
+    white-space: nowrap; /* Sikrer at teksten ikke ombrydes */
+    display: inline-block; /* Gør elementet til et blokelement så det kan animere korrekt */
+    animation: rulle_kf 20s linear infinite; /* Anvender animationen */
+    padding-top: 200px;
+  }
+</style>
