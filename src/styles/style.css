@@ -12,3 +12,14 @@ h1 {
   text-transform: uppercase;
   color: white;
 }
+h2 {
+  font-size: 40px;
+  color: white;
+  font-family: "Lexend";
+}
+
+p {
+  font-size: 24px;
+  font-family: "Roboto";
+  font-weight: lighter;
+}
