@@ -1,6 +1,7 @@
 ---
 import Footer from "../components/Footer.astro";
 import Menu from "../components/Menu.astro";
+import Lineup from "../components/Lineup.astro";
 ---
 
 <html lang="en">
@@ -13,7 +14,6 @@ import Menu from "../components/Menu.astro";
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@700&family=Lexend:wght@100..900&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
-
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -21,14 +21,33 @@ import Menu from "../components/Menu.astro";
       <Menu />
     </header>
     <main>
-      <h1>Line-up 2024</h1>
-      <Lineup> Line-up </Lineup>
+      <h1>Line-up</h1>
+      <Lineup />
     </main>
-
     <footer>
       <Footer>hej</Footer>
     </footer>
   </body>
 </html>
 
-<style></style>
+<style>
+  body {
+    background-image: url(../public/lineup_baggrund.svg);
+    background-size: cover;
+    background-color: black;
+  }
+  h1 {
+    font-size: 120px;
+    font-family: "Goldman", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+  }
+  .linje1 p,
+  .linje2 p,
+  .linje3 p {
+    background: linear-gradient(20deg, rgb(253, 253, 253), #0d5019);
+  }
+</style>
