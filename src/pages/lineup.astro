@@ -1,7 +1,8 @@
 ---
 import Footer from "../components/Footer.astro";
 import Menu from "../components/Menu.astro";
-import Lineup from "../components/Lineup.astro";
+import Lineupgreen from "../components/Lineupgreen.astro";
+import Greenbutton from "../components/Greenbutton.astro";
 ---
 
 <html lang="en">
@@ -22,7 +23,12 @@ import Lineup from "../components/Lineup.astro";
     </header>
     <main>
       <h1>Line-up</h1>
-      <Lineup />
+      <div class="lineup_knapper">
+        <Greenbutton id="button" button_text="Thursday" />
+        <Greenbutton id="button" button_text="Friday" />
+        <Greenbutton id="button" button_text="Saturday" />
+      </div>
+      <Lineupgreen />
     </main>
     <footer>
       <Footer>hej</Footer>
@@ -35,6 +41,7 @@ import Lineup from "../components/Lineup.astro";
     background-image: url(../public/lineup_baggrund.svg);
     background-size: cover;
     background-color: black;
+    background-position: center;
   }
   h1 {
     font-size: 120px;
@@ -45,9 +52,13 @@ import Lineup from "../components/Lineup.astro";
     color: white;
     text-align: center;
   }
-  .linje1 p,
-  .linje2 p,
-  .linje3 p {
-    background: linear-gradient(20deg, rgb(253, 253, 253), #0d5019);
+  .lineup_knapper {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+  }
+
+  #button {
+    padding: 50px;
   }
 </style>
