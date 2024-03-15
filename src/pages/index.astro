@@ -21,7 +21,10 @@ import Lineup from "../components/Lineup.astro";
     <header></header>
     <main>
       <h1 class="rulle">Karrusel Festival &nbsp; Karrusel Festival &nbsp; Karrusel Festival &nbsp; Karrusel Festival &nbsp;</h1>
-      <h3>Line-up 2024</h3>
+      <article>
+        <h3>Line-up 2024</h3>
+        <h4>3 days of house, disco and techno</h4>
+      </article>
       <Lineup> TEXT </Lineup>
     </main>
 
@@ -52,5 +55,10 @@ import Lineup from "../components/Lineup.astro";
     display: inline-block; /* Gør elementet til et blokelement så det kan animere korrekt */
     animation: rulle_kf 20s linear infinite; /* Anvender animationen */
     padding-top: 200px;
+  }
+
+  article {
+    position: relative;
+    margin-top: 300px;
   }
 </style>
