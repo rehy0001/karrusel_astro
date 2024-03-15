@@ -2,10 +2,37 @@
 
 ---
 
-<nav>
-  <ul>
-    <li>
-      <img src="public/logo.svg" alt="logo" />
-    </li>
-  </ul>
+<nav class="menu">
+  <div class="menu_item logo">Logo</div>
+  <div class="menu_item dato">22./8. - 24./8. 2024</div>
+  <div class="menu_item actions">
+    <button class="tickets_btn">Tickets</button>
+    <div class="burger_menu" id="burgerMenu">☰</div>
+  </div>
 </nav>
+
+<!-- menu open -->
+<div class="menu_open" id="menuOpen">
+  <a href="lineup.astro">Line Up</a>
+  <a href="ticket.astro">Tickets</a>
+  <a href="about.astro">About Us</a>
+</div>
+
+<style>
+  .menu_open {
+    display: none;
+  }
+
+  .menu_open.aktiv {
+    display: block;
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("burgerMenu").addEventListener("click", function () {
+      var menu = document.getElementById("mobilMenu");
+      menu.classList.toggle("aktiv");
+    });
+  });
+</script>
