@@ -3,6 +3,7 @@ import "../styles/style.css";
 import Footer from "../components/Footer.astro";
 import Menu from "../components/Menu.astro";
 import Lineup from "../components/Lineup.astro";
+import Stjerne from "../components/Stjerne.astro";
 ---
 
 <html lang="en">
@@ -26,6 +27,7 @@ import Lineup from "../components/Lineup.astro";
       <h1 class="rulle">Karrusel Festival &nbsp; Karrusel Festival &nbsp; Karrusel Festival &nbsp; Karrusel Festival &nbsp;</h1>
       <article>
         <h3>Line-up 2024</h3>
+        <Stjerne />
         <h4>3 days of house, disco and techno</h4>
       </article>
       <Lineup> TEXT </Lineup>
@@ -57,11 +59,34 @@ import Lineup from "../components/Lineup.astro";
     white-space: nowrap; /* Sikrer at teksten ikke ombrydes */
     display: inline-block; /* Gør elementet til et blokelement så det kan animere korrekt */
     animation: rulle_kf 20s linear infinite; /* Anvender animationen */
-    padding-top: 150px;
+    padding-top: 70px;
   }
 
   article {
     position: relative;
     margin-top: 150px;
+  }
+
+  h2 {
+    font-size: 40px;
+    color: white;
+    font-family: "Lexend";
+  }
+  h3 {
+    font-size: 62px;
+    font-family: "Roboto";
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 580;
+    padding-top: 200px;
+  }
+  h4 {
+    font-size: 48px;
+    font-family: "Lexend";
+    text-align: center;
+    color: white;
+    font-weight: 300;
+    padding-top: 50px;
   }
 </style>

@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 main {
   overflow: hidden;
@@ -15,26 +17,7 @@ h1 {
   text-transform: uppercase;
   color: white;
 }
-h2 {
-  font-size: 40px;
-  color: white;
-  font-family: "Lexend";
-}
-h3 {
-  font-size: 62px;
-  font-family: "Roboto";
-  color: white;
-  text-transform: uppercase;
-  text-align: center;
-  font-weight: 580;
-}
-h4 {
-  font-size: 48px;
-  font-family: "Lexend";
-  text-align: center;
-  color: white;
-  font-weight: 300;
-}
+
 p {
   font-size: 24px;
   font-family: "Roboto";
