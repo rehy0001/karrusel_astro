@@ -5,23 +5,23 @@
 <body>
   <div class="nav-bar">
     <div class="logo">
-      <a href="index.astro"><img id="logo" src="../public/logo.svg" alt="logo" /></a>
+      <a href="/"><img id="logo" src="../public/logo.svg" alt="logo" /></a>
     </div>
     <div>
       <div class="date">22./8. - 24./8. 2024</div>
     </div>
     <div class="button_og_burger">
       <button class="ticket-button">Ticket</button>
-      <div class="burger-menu-toggle">&#9776;</div>
+      <div class="burger-menu-toggle"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="none" stroke="#f5f5f5" stroke-linecap="round" stroke-linejoin="round" d="M3 6.001h18m-18 6h18m-18 6h18"></path></svg></div>
     </div>
   </div>
 
   <div class="burger-menu">
-    <div class="burger-menu-close">&times;</div>
+    <div class="burger-menu-close"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 21 21"><path fill="none" stroke="#f5f5f5" stroke-linecap="round" stroke-linejoin="round" d="m15.5 15.5l-10-10zm0-10l-10 10"></path></svg></div>
     <ul class="menu-links">
-      <li><a href="#">Line Up</a></li>
-      <li><a href="#">Tickets</a></li>
-      <li><a href="#">About Us</a></li>
+      <li><a href="/lineup">Line Up</a></li>
+      <li><a href="/ticket">Tickets</a></li>
+      <li><a href="/about">About Us</a></li>
     </ul>
   </div>
 
@@ -35,7 +35,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 10px 20px;
+      padding: 20px 30px;
       color: #fff;
     }
 
@@ -45,22 +45,26 @@
     }
 
     .logo img {
+      position: absolute;
       width: 110px;
       height: auto;
       margin-right: 10px;
-      margin-left: 10px;
-      margin-top: 20px;
+      z-index: 9802;
+      top: 44px;
     }
 
     .date {
       font-size: 26px;
       font-family: "Lexend";
       font-weight: 400;
+      top: 44px;
+      align-items: center;
     }
 
     .button_og_burger {
       display: flex;
       justify-content: space-between;
+      padding-top: 14px;
     }
 
     .ticket-button {
@@ -74,16 +78,21 @@
       left: 0;
       width: 100%;
       height: 100%;
-      z-index: 9999;
+      z-index: 9800;
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      background-image: url(../public/menu_baggrund.svg);
     }
 
     .burger-menu-toggle {
       font-family: "Roboto";
       font-size: 3rem;
       font-weight: 200;
+    }
+
+    .burger-menu-toggle:hover {
+      cursor: pointer;
     }
 
     .burger-menu.active {
@@ -97,12 +106,20 @@
       font-size: 3rem;
       color: #fff;
       cursor: pointer;
+      margin-top: 20px;
+      margin-right: 10px;
     }
 
     .menu-links {
       list-style: none;
       padding: 0;
       margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: linear-gradient(228deg, rgb(253, 253, 253), #eb1b7d);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
 
     .menu-links li {
@@ -111,8 +128,11 @@
 
     .menu-links a {
       color: #fff;
+      font-family: "Goldman";
+      font-weight: 900;
+      font-size: 130px;
       text-decoration: none;
-      font-size: 24px;
+      text-transform: uppercase;
     }
   </style>
 
