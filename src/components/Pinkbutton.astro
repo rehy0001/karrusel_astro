@@ -1,0 +1,21 @@
+---
+const button_text = Astro.props.button_text;
+---
+
+<div class="button">
+  <a href="/lineup" class="pink_button">{button_text}</a>
+</div>
+
+<style>
+  .pink_button {
+    padding: 10px 20px;
+    background: linear-gradient(228deg, rgb(251, 136, 20), #eb1b7d);
+    color: white;
+    text-decoration: none;
+    margin-top: 20px;
+    font-family: "Roboto";
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+</style>
