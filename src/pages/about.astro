@@ -1,0 +1,40 @@
+---
+import "../styles/style.css";
+import Footer from "../components/Footer.astro";
+import Menu from "../components/Menu.astro";
+import Card from "../components/Card.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Lineup</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@700&family=Lexend:wght@100..900&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <Menu />
+    </header>
+    <main>
+      <h1>About us</h1>
+    </main>
+    <footer>
+      <Footer>hej</Footer>
+    </footer>
+    <style>
+      body {
+        background-image: url(../public/about_baggrund.svg);
+        background-size: cover;
+      }
+      h1 {
+        margin-top: 80px;
+      }
+    </style>
+  </body>
+</html>
