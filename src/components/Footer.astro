@@ -12,8 +12,10 @@
   <div>
     <h4 id="contact">Contact</h4>
     <p id="mail">info@nusnus.dk</p>
-    <img id="insta" src="../public/insta.svg" alt="insta" />
-    <img id="facebook" src="../public/facebook.svg" alt="facebook" />
+    <div id="ikoner">
+      <img src="../public/insta.svg" alt="insta" />
+      <img src="../public/facebook.svg" alt="facebook" />
+    </div>
   </div>
 
   <div>
@@ -23,53 +25,49 @@
 
 <style>
   .grid_1_1_1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    justify-content: center;
     background-color: black;
     color: white;
     padding-top: 5%;
     padding-bottom: 5%;
+    gap: 400px;
   }
   #festivalsite {
-    margin-right: 71%;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 1.3rem;
-    margin-left: 200px;
+    line-height: 40px;
+    margin-bottom: 10px;
+  }
+  #ikoner {
+    display: flex;
+    gap: 25px;
+    width: 40%;
+    margin-top: 20px;
   }
   #adresse {
-    margin-left: 200px;
     line-height: 40px;
   }
   #postnummer {
-    margin-left: 200px;
-    line-height: 40px;
   }
 
   #contact {
-    margin-right: 85%;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 1.3rem;
-    margin-left: 200px;
+    line-height: 40px;
+    margin-bottom: 10px;
   }
   #mail {
-    margin-left: 200px;
     line-height: 40px;
   }
   p {
     font-family: "Roboto", sans-serif;
     font-weight: 100;
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
   #logo {
-    padding-top: 7%;
-    margin-left: 100px;
-  }
-  #insta {
-    width: 10%;
-  }
-  #facebook {
-    width: 10%;
+    margin-top: 50px;
   }
 </style>
