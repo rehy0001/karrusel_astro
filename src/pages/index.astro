@@ -33,7 +33,9 @@ import Pinkbutton from "../components/Pinkbutton.astro";
 
       <Lineup> TEXT </Lineup>
 
-      <Pinkbutton button_text="Buy your tickets here" class="ticket_knap" />
+      <div class="ticket_knap_bottum">
+        <Pinkbutton button_text="Buy your tickets here" class="ticket_knap" />
+      </div>
     </main>
     <footer>
       <Footer>hej</Footer>
@@ -59,7 +61,7 @@ import Pinkbutton from "../components/Pinkbutton.astro";
       overflow: hidden; /* Sikrer at teksten uden for beholderen ikke vises */
       white-space: nowrap; /* Sikrer at teksten ikke ombrydes */
       display: inline-block; /* Gør elementet til et blokelement så det kan animere korrekt */
-      animation: rulle_kf 40s linear infinite; /* Anvender animationen */
+      animation: rulle_kf 30s linear infinite; /* Anvender animationen */
     }
 
     article {
@@ -91,10 +93,8 @@ import Pinkbutton from "../components/Pinkbutton.astro";
     }
 
     .ticket_knap {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      display: inline-block;
+      margin: 20px auo;
     }
   </style>
 </html>
