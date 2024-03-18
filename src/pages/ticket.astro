@@ -23,7 +23,7 @@ console.log(data);
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@700&family=Lexend:wght@100..900&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="/src/styles/style.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
@@ -32,10 +32,7 @@ console.log(data);
     </header>
 
     <main>
-      <div class="brodkrummesti">
-        <a href="/">Home</a> /
-        <span>Tickets</span>
-      </div>
+      <p>Home / Tickets</p>
 
       <h1>Tickets</h1>
 
@@ -61,21 +58,19 @@ console.log(data);
       background-size: cover;
     }
 
-    .tickets_img {
-      width: 100%;
-      margin-top: 30px;
-    }
-
     h1 {
-      font-size: 120px;
+      font-size: 100px;
       font-family: "Goldman", sans-serif;
       font-weight: 700;
       font-style: normal;
       text-transform: uppercase;
       color: white;
       text-align: center;
-      margin-bottom: 70px;
-      margin-top: 70px;
+    }
+
+    .tickets_img {
+      width: 100%;
+      margin-top: 30px;
     }
 
     .tickets {
@@ -91,16 +86,6 @@ console.log(data);
       font-size: 18px;
       color: white;
       margin: 40px 60px;
-    }
-    .brodkrummesti {
-      padding: 40px;
-      text-decoration: none;
-      color: white;
-    }
-
-    .brodkrummesti a {
-      text-decoration: none;
-      color: white;
     }
   </style>
 </html>
