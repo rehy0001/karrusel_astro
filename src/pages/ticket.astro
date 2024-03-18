@@ -2,7 +2,6 @@
 import Festivalpass from "../components/Festivalpass.astro";
 import Menu from "../components/Menu.astro";
 import Footer from "../components/Footer.astro";
-import "../styles/style.css";
 ---
 
 <html lang="en">
@@ -31,7 +30,13 @@ import "../styles/style.css";
 
       <h1>Tickets</h1>
 
-      <Festivalpass />
+      <section class="tickets">
+        {
+          data.map((tickets) => {
+            return <Festivalpass data={tickets} />;
+          })
+        }
+      </section>
 
       <img src="../public/tickets_img.jpg" alt="Festival" class="tickets_img" />
     </main>
@@ -50,6 +55,13 @@ import "../styles/style.css";
     .tickets_img {
       width: 100%;
       margin-top: 30px;
+    }
+
+    .tickets {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      row-gap: 30px;
+      margin: 10px 80px;
     }
 
     p {
