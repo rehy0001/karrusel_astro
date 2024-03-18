@@ -2,6 +2,7 @@
 import Festivalpass from "../components/Festivalpass.astro";
 import Menu from "../components/Menu.astro";
 import Footer from "../components/Footer.astro";
+import "../styles/style.css";
 ---
 
 <html lang="en">
@@ -23,7 +24,10 @@ import Footer from "../components/Footer.astro";
     </header>
 
     <main>
-      <p>Home / Tickets</p>
+      <div class="brodkrummesti">
+        <a href="/index">Home</a> /
+        <span>Tickets</span>
+      </div>
 
       <h1>Tickets</h1>
 
@@ -41,16 +45,6 @@ import Footer from "../components/Footer.astro";
     body {
       background-image: url(../public/tickets_baggrund.svg);
       background-size: cover;
-    }
-
-    h1 {
-      font-size: 100px;
-      font-family: "Goldman", sans-serif;
-      font-weight: 700;
-      font-style: normal;
-      text-transform: uppercase;
-      color: white;
-      text-align: center;
     }
 
     .tickets_img {

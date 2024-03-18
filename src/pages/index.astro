@@ -26,8 +26,10 @@ import Pinkbutton from "../components/Pinkbutton.astro";
     <main>
       <h1 class="rulle">Karrusel Festival &nbsp; Karrusel Festival &nbsp; Karrusel Festival &nbsp; Karrusel Festival &nbsp; Karrusel Festival &nbsp; Karrusel Festival &nbsp; Karrusel Festival &nbsp;</h1>
       <article>
-        <h3>Line-up 2024</h3>
-        <Stjerne />
+        <div class="h3_div">
+          <h3>Line-up 2024</h3>
+          <Stjerne class="h3_stjerne" />
+        </div>
         <h4>3 days of house, disco and techno</h4>
       </article>
 
@@ -66,7 +68,15 @@ import Pinkbutton from "../components/Pinkbutton.astro";
 
     article {
       position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       margin-top: 150px;
+    }
+
+    h1 {
+      margin-top: 110px;
     }
 
     h2 {
@@ -79,14 +89,19 @@ import Pinkbutton from "../components/Pinkbutton.astro";
       font-family: "Roboto";
       color: white;
       text-transform: uppercase;
-      text-align: center;
       font-weight: 580;
+    }
+    .h3_div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 70px;
       padding-top: 60px;
+      padding-left: 170px;
     }
     h4 {
       font-size: 48px;
       font-family: "Lexend";
-      text-align: center;
       color: white;
       font-weight: 300;
       padding-top: 50px;
