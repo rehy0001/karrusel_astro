@@ -2,6 +2,15 @@
 import Festivalpass from "../components/Festivalpass.astro";
 import Menu from "../components/Menu.astro";
 import Footer from "../components/Footer.astro";
+
+const data = await fetch("https://nsvhnaqghqzdkirygzvp.supabase.co/rest/v1/Tickets", {
+  method: "GET",
+  headers: {
+    apikey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5zdmhuYXFnaHF6ZGtpcnlnenZwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTA3NjIxNzEsImV4cCI6MjAyNjMzODE3MX0.MQKyAQmVOF167eC0aeFIvEm-yJZc7jMttZe6a5BVkFo",
+  },
+}).then((res) => res.json());
+
+console.log(data);
 ---
 
 <html lang="en">
@@ -27,7 +36,13 @@ import Footer from "../components/Footer.astro";
 
       <h1>Tickets</h1>
 
-      <Festivalpass />
+      <section class="tickets">
+        {
+          data.map((tickets) => {
+            return <Festivalpass data={tickets} />;
+          })
+        }
+      </section>
 
       <img src="../public/tickets_img.jpg" alt="Festival" class="tickets_img" />
     </main>
@@ -56,6 +71,13 @@ import Footer from "../components/Footer.astro";
     .tickets_img {
       width: 100%;
       margin-top: 30px;
+    }
+
+    .tickets {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      row-gap: 30px;
+      margin: 10px 80px;
     }
 
     p {
