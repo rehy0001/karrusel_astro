@@ -1,0 +1,91 @@
+---
+import "../styles/style.css";
+import Footer from "../components/Footer.astro";
+import Menu from "../components/Menu.astro";
+import Card from "../components/Card.astro";
+import Stjerne from "../components/Stjerne.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Lineup</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@700&family=Lexend:wght@100..900&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <Menu />
+    </header>
+    <main>
+      <h1>About us</h1>
+      <div class="text_div">
+        <div class="next_festival">
+          <h2>Next festival</h2>
+          <p>
+            22 - 24 August 2024
+            <br />
+            <br />3 days of house, disco, and techno in the magical forest. Karrusel takes place at a secluded green spot on Refshaleøen in central Copenhagen.
+          </p>
+        </div>
+        <Stjerne>Hej</Stjerne>
+        <div>
+          <h2>Festival Experience</h2>
+          <p>
+            Karrusel believes in the right to a harassment-free festival experience. We believe in the right of everyone to express themselves. Karrusel welcomes everybody – all with their different orientations, experiences, histories and backgrounds. Karrusel only exists if everyone takes care of each other, respects their own and others
+            boundaries, embraces diversity and acts as a part of the community. <br />
+            <br /> If you feel unsafe, please reach out to our awareness team. They will be wearing a pink vests and walk around the site and be at their base (see on this map). Ask any festival staff and they will guide you to the them. <br />
+            <br /> Take responsibility for your own actions Respect your own and others boundaries Speak up rather than look the other way
+          </p>
+        </div>
+        <div>
+          <h2>Sustanability</h2>
+          <p>
+            Karrusel is committed to becoming more sustainable. In order to save resources and reduce waste we use left over materials and timber for stage designs and installations. We will re-use production and print materials when possible year after year. Beverages are served in reusable or sustainable materials. Straws are not being used. <br
+            />
+            <br /> How you can help: Take a bike or public transport to the festival. Don’t bring confetti or glitter to the festival. There will be free tap water stations during the festival. Please bring an empty cup or bottle and drink nice free tap water.
+          </p>
+        </div>
+        <div>
+          <h2>History</h2>
+          <p>
+            2024 marks the 5th edition of Karrusel. Karrusel is a circus themed rave presenting some of the world's leading electronic artists. <br />
+            <br />Past editions include performances by Acid Pauli, Amelie Lens, Dixon, FJAAK, Folamour, Hunee, Job Jobse, Kölsch, Mall Grab, Nastia, Partiboi69, Peggy Gou, Richie Hawtin, Skin On Skin, The Blessed Madonna, Victor Ruiz and VTSS. <br />
+            <br /> The festival is open air and takes place on secluded green spot at the abandoned shipyard of Refshaleøen in central Copenhagen.
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <Footer>hej</Footer>
+    </footer>
+    <style>
+      body {
+        background-image: url(../public/about_baggrund.svg);
+        background-size: cover;
+      }
+
+      h2 {
+        font-size: 40px;
+        margin-top: 70px;
+        font-family: "Lexend";
+      }
+      .text_div {
+        margin: 80px;
+        width: 60%;
+      }
+      .next_festival {
+        margin-top: 230px;
+      }
+      p {
+        font-weight: 100;
+        line-height: 40px;
+      }
+    </style>
+  </body>
+</html>
