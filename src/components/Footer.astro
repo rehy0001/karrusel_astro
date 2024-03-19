@@ -33,7 +33,6 @@
     padding-bottom: 5%;
     gap: 400px;
   }
-
   #festivalsite {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
@@ -51,7 +50,6 @@
   #adresse {
     line-height: 40px;
   }
-
   #contact {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
@@ -66,9 +64,32 @@
     font-family: "Roboto", sans-serif;
     font-weight: 100;
     font-size: 1.1rem;
+    color: #d1cece;
   }
   #logo {
     margin-top: 20px;
     width: 80%;
+  }
+
+  @media (max-width: 600px) {
+    .grid_1_1_1 {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 55px;
+      margin-left: 60px;
+      margin-left: 60px;
+    }
+    p {
+      margin-bottom: 0px;
+    }
+    #logo {
+      width: 35%;
+      margin-left: 10px;
+      margin-top: 10px;
+    }
+    #ikoner {
+      gap: 20px;
+      width: 30%;
+    }
   }
 </style>
