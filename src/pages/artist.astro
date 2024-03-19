@@ -46,9 +46,16 @@ import Spotify from "../components/Spotify.astro";
   }
 
   h3 {
-    font-size: 30px;
+    font-size: 2rem;
     font-family: "Lexend";
-    color: white;
+    color: #767676;
     text-align: center;
+    line-height: 40px;
+  }
+
+  @media (max-width: 600px) {
+    h3 {
+      font-size: 1.5rem;
+    }
   }
 </style>

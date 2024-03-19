@@ -5,8 +5,7 @@ import "../styles/style.css";
 <div class="grid_1_1">
   <div>
     <p>
-      Âme is the german duo Kristian Beyer & Frank Wiedemann. <br /><br /> In a genre seemingly obsessed with revisiting the past, Âme look firmly to the future of dance music. Driven toward continual evolution since they started making tracks in 2001, the German duo of Frank Wiedemann and Kristian Beyer have challenged club-goers’ expectations with
-      their conceptually driven and uniquely visceral music.
+      Âme is the german duo Kristian Beyer & Frank Wiedemann. <br /><br /> In a genre seemingly obsessed with revisiting the past, Âme look firmly to the future of dance music. Driven toward continual evolution since they started making tracks in 2001, the German duo of Frank Wiedemann and Kristian Beyer have challenged club-goers’ expectations with their conceptually driven and uniquely visceral music.
     </p>
   </div>
   <div>
@@ -32,5 +31,17 @@ import "../styles/style.css";
 
   img {
     margin-top: 100px;
+  }
+
+  @media (max-width: 600px) {
+    .grid_1_1 {
+      display: grid;
+      grid-template-columns: 1fr;
+      margin-left: 20px;
+      margin-right: 0px;
+    }
+    p {
+      margin-top: 30px;
+    }
   }
 </style>
