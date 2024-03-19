@@ -13,13 +13,13 @@
     <h4 id="contact">Contact</h4>
     <p id="mail">info@nusnus.dk</p>
     <div id="ikoner">
-      <img src="../public/insta.svg" alt="insta" />
-      <img src="../public/facebook.svg" alt="facebook" />
+      <a href="https://www.instagram.com/karruselfest/"><img src="../public/insta.svg" alt="insta" /></a>
+      <a href="https://www.facebook.com/karruselfest"><img src="../public/facebook.svg" alt="facebook" /></a>
     </div>
   </div>
 
   <div>
-    <img id="logo" src="../public/logo.svg" alt="logo" />
+    <a href="/"><img id="logo" src="../public/logo.svg" alt="logo" /></a>
   </div>
 </div>
 
@@ -33,6 +33,7 @@
     padding-bottom: 5%;
     gap: 400px;
   }
+
   #festivalsite {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
@@ -41,15 +42,14 @@
     margin-bottom: 10px;
   }
   #ikoner {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 25px;
-    width: 40%;
+    width: 75%;
     margin-top: 20px;
   }
   #adresse {
     line-height: 40px;
-  }
-  #postnummer {
   }
 
   #contact {
@@ -68,6 +68,7 @@
     font-size: 1.1rem;
   }
   #logo {
-    margin-top: 50px;
+    margin-top: 20px;
+    width: 80%;
   }
 </style>
