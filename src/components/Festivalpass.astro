@@ -4,7 +4,7 @@ const { data } = Astro.props;
 console.log(data);
 ---
 
-<article>
+<article class={data.id == 1 ? "fullfestival" : data.id == 2 ? "thursday" : data.id == 3 ? "friday" : data.id == 4 ? "saturday" : ""}>
   <h3>Karrusel Festival 2024</h3>
 
   <h2>{data.ticket_name}</h2>
@@ -20,50 +20,89 @@ console.log(data);
 </article>
 
 <style>
+  .fullfestival {
+    border: 3px solid #3ce764;
+
+    box-shadow:
+      0 0 10px #1620a8,
+      0 0 20px #00ff33,
+      inset 0 0 5px #16cd41;
+  }
+  .thursday {
+    border: 3px solid #fc953b;
+
+    box-shadow:
+      0 0 10px #f88101,
+      0 0 20px #ffaa65,
+      inset 0 0 5px #fc953b;
+  }
+
+  .friday {
+    border: 3px solid #ff87ed;
+
+    box-shadow:
+      0 0 10px #df6d0f,
+      0 0 20px #ff00ee,
+      inset 0 0 5px #d13ebb;
+  }
+
+  .saturday {
+    border: 3px solid #e187ff;
+
+    box-shadow:
+      0 0 10px #5a0cc8,
+      0 0 20px #c800ff,
+      inset 0 0 5px #cb43f9;
+  }
+
   article {
     border: 1px solid white;
-    background-color: black;
-    width: 430px;
+    background-color: rgba(25, 25, 25, 0.896);
+    width: 91%;
     text-align: center;
-    padding: 15px 25px;
-    margin: 10px auto;
+    padding: 2% 1%;
+    margin: 2% auto;
   }
 
   h3 {
     font-family: "Lexend";
-    font-size: 17px;
+    font-size: 1.3cqw;
     color: white;
+    margin-top: 50px;
+    margin-bottom: 30px;
   }
 
   h2 {
     font-family: "Goldman";
     font-weight: bold;
-    font-size: 46px;
+    font-size: 2cqw;
     background: linear-gradient(228deg, rgb(253, 253, 253), #eb1b7d);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
   }
 
   p {
     font-family: "Roboto";
     font-weight: 300;
-    font-size: 18px;
+    font-size: 1cqw;
     color: white;
     padding: 10px 20px;
     line-height: 40px;
   }
 
   #fee {
-    margin-top: 2px;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
+    padding: 0;
   }
 
   h4 {
     font-family: "Roboto";
     font-weight: 600;
-    font-size: 39px;
+    font-size: 2cqw;
     color: #eb1b7d;
-    margin-bottom: 3px;
+    margin-top: 30px;
+    margin-bottom: 0;
   }
 
   a {
