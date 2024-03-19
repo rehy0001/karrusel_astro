@@ -135,15 +135,46 @@ import Pinkbutton from "../components/Pinkbutton.astro";
 
     .menu-links li {
       margin-bottom: 30px;
+      margin-top: 20px;
     }
 
     .menu-links a {
       color: #fff;
       font-family: "Goldman";
       font-weight: 900;
-      font-size: 97px;
+      font-size: 6.5rem;
       text-decoration: none;
       text-transform: uppercase;
+    }
+
+    @media (max-width: 600px) {
+      .date {
+        display: none;
+      }
+
+      .menu_knap {
+        display: none;
+      }
+
+      #logo {
+        width: 95px;
+      }
+
+      .logo img {
+        top: 22px;
+      }
+
+      .burger-menu-toggle {
+    font-size: 3.2rem;
+    margin-right: 19px;
+    }
+
+    .menu-links a {
+      font-size: 3rem;
+    }
+
+    .burger-menu-close {
+      margin-right: 20px;
     }
   </style>
 
