@@ -1,104 +1,113 @@
 ---
-
+const { variant } = Astro.props;
 ---
 
-<div class="line_up">
-  <div class="card">
-    <div class="linje1">
-      <p>ACID PAULI</p>
-      <a href="/artist"><p>ÂME</p></a>
-      <p>FJAAK dj set</p>
+<article class={variant}>
+  <div class="line_up">
+    <div class="card">
+      <div class="linje1">
+        <a href="/artist"><p>ACID PAULI</p></a>
+        <a href="/artist"><p>ÂME</p></a>
+        <a href="/artist"><p>FJAAK dj set</p> </a>
+      </div>
+      <div class="linje2">
+        <a href="/artist"><p>HAAI</p></a>
+        <a href="/artist"><p>KÖLSCH</p></a>
+        <a href="/artist"><p>MIRA</p></a>
+        <a href="/artist"><p>NARCISS</p></a>
+      </div>
+      <div class="linje3">
+        <a href="/artist"><p>RICHIE HAWTON</p></a>
+        <a href="/artist"><p>SATORI</p> </a>
+      </div>
+
+      <div class="card2">
+        <div class="linje4">
+          <a href="/artist"><p>ANNA LOGIC</p></a>
+          <a href="/artist"><p>BOOGIE ROOKIE</p></a>
+          <a href="/artist"> <p>COCKWHORE & MACHO</p></a>
+          <a href="/artist"> <p>DEE BROWN</p> </a>
+        </div>
+        <div class="linje5">
+          <a href="/artist"><p>DJ SEA VIEW</p></a>
+          <a href="/artist"><p>DJUMA SOUNDSYSTEM</p></a>
+          <a href="/artist"><p>FUTTE RICO</p></a>
+        </div>
+        <div class="linje6">
+          <a href="/artist"><p>POWERSTRANGER</p></a>
+          <a href="/artist"><p>SEB DALMAR</p></a>
+          <a href="/artist"><p>TIGHT CHERRY</p></a>
+        </div>
+        <div class="linje6">
+          <a href="/artist"><p>VIXEN</p></a>
+          <a href="/artist"><p>NAYAN</p></a>
+          <a href="/artist"><p>SØREN SKOV</p></a>
+          <a href="/artist"><p>ESKI</p></a>
+          <a href="/artist"><p>HAENSEN & GRETEL</p></a>
+        </div>
+      </div>
     </div>
-  </div>
-  <div class="linje2">
-    <p>HAAI</p>
-    <p>KÖLSCH</p>
-    <p>MIRA</p>
-    <p>NARCISS</p>
-  </div>
-  <div class="linje3">
-    <p>RICHIE HAWTON</p>
-    <p>SATORI</p>
-  </div>
-</div>
 
-<div class="card2">
-  <div class="linje4">
-    <p>ANNA LOGIC</p>
-    <p>BOOGIE ROOKIE</p>
-    <p>COCKWHORE & MACHO</p>
-    <p>DEE BROWN</p>
-  </div>
-  <div class="linje5">
-    <p>DJ SEA VIEW</p>
-    <p>DJUMA SOUNDSYSTEM</p>
-    <p>FUTTE RICO</p>
-  </div>
-  <div class="linje6">
-    <p>POWERSTRANGER</p>
-    <p>SEB DALMAR</p>
-    <p>TIGHT CHERRY</p>
-  </div>
-  <div class="linje6">
-    <p>VIXEN</p>
-    <p>NAYAN</p>
-    <p>SØREN SKOV</p>
-    <p>ESKI</p>
-    <p>HAENSEN & GRETEL</p>
-  </div>
-</div>
+    <style>
+      .pink p {
+        background: linear-gradient(60deg, rgb(253, 253, 253), #f06292);
+        background-clip: text;
+      }
+      .green p {
+        background: linear-gradient(60deg, rgb(253, 253, 253), #00b359);
+        /* Sørger for at gradienten kun gælder for tekst */
+        background-clip: text;
+        /* Gør teksten gennemsigtig, så kun gradienten vises */
+      }
 
-<style>
-  .card {
-    padding-top: 80px;
-  }
-  .linje1,
-  .linje2,
-  .linje3 {
-    display: flex;
-    gap: 100px;
-    justify-content: center;
-  }
-  .linje1 p,
-  .linje2 p,
-  .linje3 p {
-    font-size: 72px;
-    font-family: "Roboto";
-    font-weight: bolder;
-    /* Definerer en pink gradient */
-    background: linear-gradient(20deg, rgb(253, 253, 253), #f06292);
-    /* Sørger for at gradienten kun gælder for tekst */
-    background-clip: text;
-    /* Gør teksten gennemsigtig, så kun gradienten vises */
-    color: transparent;
-    /* Tilføjet for at sikre bedre kompatibilitet */
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  .linje4,
-  .linje5,
-  .linje6 {
-    display: flex;
-    gap: 100px;
-    justify-content: center;
-  }
-  .linje4 p,
-  .linje5 p,
-  .linje6 p {
-    font-size: 35px;
-    font-family: "Roboto";
-    /* Definerer en pink gradient */
-    background: linear-gradient(20deg, rgb(253, 253, 253), #f06292);
-    /* Sørger for at gradienten kun gælder for tekst */
-    background-clip: text;
-    /* Gør teksten gennemsigtig, så kun gradienten vises */
-    color: transparent;
-    /* Tilføjet for at sikre bedre kompatibilitet */
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  .card2 {
-    padding-top: 50px;
-    margin-bottom: 350px;
-  }
-</style>
+      .card {
+        padding-top: 80px;
+      }
+      .linje1,
+      .linje2,
+      .linje3 {
+        display: flex;
+        gap: 100px;
+        justify-content: center;
+      }
+      .linje1 p,
+      .linje2 p,
+      .linje3 p {
+        font-size: 72px;
+        font-family: "Roboto";
+        font-weight: bolder;
+        /* Definerer en pink gradient */
+
+        color: transparent;
+        /* Tilføjet for at sikre bedre kompatibilitet */
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      .linje4,
+      .linje5,
+      .linje6 {
+        display: flex;
+        gap: 100px;
+        justify-content: center;
+      }
+      .linje4 p,
+      .linje5 p,
+      .linje6 p {
+        font-size: 35px;
+        font-family: "Roboto";
+        /* Definerer en pink gradient */
+        /* Sørger for at gradienten kun gælder for tekst */
+        background-clip: text;
+        /* Gør teksten gennemsigtig, så kun gradienten vises */
+        color: transparent;
+        /* Tilføjet for at sikre bedre kompatibilitet */
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      .card2 {
+        padding-top: 50px;
+        margin-bottom: 250px;
+      }
+    </style>
+  </div>
+</article>

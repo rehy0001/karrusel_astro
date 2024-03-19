@@ -2,6 +2,7 @@
 import Festivalpass from "../components/Festivalpass.astro";
 import Menu from "../components/Menu.astro";
 import Footer from "../components/Footer.astro";
+import "../styles/style.css";
 
 const data = await fetch("https://nsvhnaqghqzdkirygzvp.supabase.co/rest/v1/Tickets", {
   method: "GET",
@@ -61,16 +62,6 @@ console.log(data);
       background-size: cover;
     }
 
-    h1 {
-      font-size: 100px;
-      font-family: "Goldman", sans-serif;
-      font-weight: 700;
-      font-style: normal;
-      text-transform: uppercase;
-      color: white;
-      text-align: center;
-    }
-
     .tickets_img {
       width: 100%;
       margin-top: 30px;
@@ -89,16 +80,6 @@ console.log(data);
       font-size: 18px;
       color: white;
       margin: 40px 60px;
-    }
-
-    .brodkrummesti {
-      color: white;
-      padding: 40px 60px;
-    }
-
-    .brodkrummesti a {
-      text-decoration: none;
-      color: white;
     }
   </style>
 </html>

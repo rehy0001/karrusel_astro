@@ -28,16 +28,19 @@ import Stjerne from "../components/Stjerne.astro";
         <span>About us</span>
       </div>
       <h1>About us</h1>
-      <div class="text_div">
-        <div class="next_festival">
-          <h2>Next festival</h2>
-          <p>
+
+      <div class="next_festival">
+        <h2>Next festival</h2>
+        <div class="h3_div">
+          <p class="width60">
             22 - 24 August 2024
             <br />
             <br />3 days of house, disco, and techno in the magical forest. Karrusel takes place at a secluded green spot on Refshaleøen in central Copenhagen.
           </p>
+          <Stjerne size="about" />
         </div>
-        <Stjerne>Hej</Stjerne>
+      </div>
+      <div class="text_div">
         <div>
           <h2>Festival Experience</h2>
           <p>
@@ -75,20 +78,34 @@ import Stjerne from "../components/Stjerne.astro";
       }
 
       h2 {
-        font-size: 40px;
+        font-size: 30px;
         margin-top: 70px;
         font-family: "Lexend";
       }
       .text_div {
-        margin: 80px;
+        margin-left: 80px;
+        margin-right: 80px;
+        margin-bottom: 90px;
         width: 60%;
       }
+      .text_div h2 {
+        padding-bottom: 25px;
+      }
       .next_festival {
-        margin-top: 230px;
+        margin-left: 80px;
+        margin-right: 80px;
+        padding-top: 40px;
       }
       p {
         font-weight: 100;
         line-height: 40px;
+      }
+
+      .h3_div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 150px;
       }
     </style>
   </body>
