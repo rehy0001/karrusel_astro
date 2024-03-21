@@ -41,12 +41,13 @@ a {
 }
 @media (max-width: 600px) {
   h1 {
-    font-size: 3.5rem;
+    font-size: 3.4rem;
   }
   p {
     font-size: 1.1rem;
   }
   .brodkrummesti {
-    padding-top: 5%;
+    padding-top: 6%;
+    margin-left: 6%;
   }
 }
