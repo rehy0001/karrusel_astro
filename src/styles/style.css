@@ -28,7 +28,7 @@ p {
   color: white;
 }
 .brodkrummesti {
-  margin-left: 2%;
+  margin-left: 3%;
   padding-top: 3%;
 }
 
@@ -45,5 +45,8 @@ a {
   }
   p {
     font-size: 1.1rem;
+  }
+  .brodkrummesti {
+    padding-top: 5%;
   }
 }
