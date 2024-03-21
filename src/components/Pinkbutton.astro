@@ -16,6 +16,11 @@ const button_text = Astro.props.button_text;
     font-weight: 500;
     letter-spacing: 2px;
     text-transform: uppercase;
-    margin-bottom: 20px;
+  }
+
+  @media (max-width: 600px) {
+    .pink_button {
+      font-size: 0.6rem;
+    }
   }
 </style>
